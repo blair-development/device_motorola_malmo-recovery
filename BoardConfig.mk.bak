@@ -25,7 +25,7 @@ AB_OTA_PARTITIONS += \
     system_dlkm \
     vendor \
     vendor_dlkm
-
+    
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -101,9 +101,6 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
-
-# Properties 
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Tool
 TW_INCLUDE_REPACKTOOLS := true
